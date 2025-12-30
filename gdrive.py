@@ -9,7 +9,7 @@ from googleapiclient.http import MediaFileUpload
 from pathlib import Path
 
 SCOPES = ['https://www.googleapis.com/auth/drive']
-the_t = 5555
+the_t = 5
 
 def resource_path(relative_path):
     """ Lấy đường dẫn tuyệt đối đến tài nguyên (cho cả script và exe) """
@@ -155,4 +155,5 @@ if __name__ == '__main__':
         else:
             print(f"\n[Lỗi] Không tìm thấy: {path}")
             
+
     print("\nHoàn tất!")
