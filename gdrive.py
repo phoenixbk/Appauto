@@ -43,8 +43,8 @@ def authenticate():
             flow = InstalledAppFlow.from_client_config(CLIENT_CONFIG, SCOPES)
             creds = flow.run_local_server(port=0)
         # Lưu lại token cho lần chạy sau
-        with open('token.json', 'w') as token:
-            token.write(creds.to_json())    
+        #with open('token.json', 'w') as token:
+            #token.write(creds.to_json())    
         # Lưu ý: Khi token được làm mới, dữ liệu mới sẽ chỉ nằm trong bộ nhớ.
         # Nếu muốn lưu lại cho lần sau mà không phải đăng nhập lại, 
         # bạn vẫn nên có cơ chế ghi ra file vật lý.
